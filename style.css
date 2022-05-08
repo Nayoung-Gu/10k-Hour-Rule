@@ -1,0 +1,231 @@
+:root {
+    --bg-color: #5B2386;
+    --btn-color: #FCEE21;
+    --btn-border-radius: 56px;
+}
+
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #5B2386;
+}
+
+input {
+    border: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.txt-hidden {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* layout */
+.app {
+    width: 900px;
+    margin: 0 auto;
+    /* background-color: lightblue; */
+}
+
+/* components */
+.header {
+    margin-top: 100px;
+    background: url("./images/logo-bg-clock.png") no-repeat;
+    background-position: center;
+    background-size: 220px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header .img-logo {
+    width: 564px;
+    margin: 0 auto;
+}
+
+.main .maxim {
+    margin-top: 66px;
+    color: var(--btn-color);
+    font-family: "OTEnjoystoriesBA";
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+.rule-definition {
+    color: #fff;
+    font-family: 'GmarketSansLight';
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.rule-definition strong {
+    font-family: 'GmarketSansMedium';
+    font-size: 22px;
+}
+
+.rule-definition::before {
+    content: "";
+    background: url("./images/quotation-left.png") no-repeat;
+    background-position: center;
+    background-size: 37px 30px;
+    display: inline-block;
+    width: 46px;
+    height: 96px;
+    position: absolute;
+    top: -10px;
+    left: 180px;
+}
+
+.rule-definition::after {
+    content: "";
+    background: url("./images/quotation-right.png") no-repeat;
+    background-size: 37px 30px;
+    display: inline-block;
+    width: 46px;
+    height: 96px;
+    position: absolute;
+    top: 25px;
+    right: 180px;
+}
+
+.form {
+    font-family: 'GmarketSansLight';
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.form input {
+    width: 228px;
+    border-radius: 7px;
+    padding: 17px 3px;
+    margin: 0 15px;
+}
+
+.form input::placeholder {
+    font-family: 'GmarketSansLight';
+    font-size: 20px;
+    color: #BABCBE;
+    text-align: center;
+}
+
+.form .calc-btn {
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    margin-top: 80px;
+    padding: 20px 40px;
+    color: var(--bg-color);
+    background-color: var(--btn-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: var(--btn-border-radius);
+    position: relative;
+}
+
+.form .calc-btn::after {
+    content: "";
+    display: inline-block;
+    background: url("./images/finger-point.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 64px;
+    height: 72px;
+    position: absolute;
+    top: 15px;
+    right: -70px;
+}
+
+.result {
+    font-family: 'GmarketSansLight';
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.result span {
+    font-family: 'GmarketSansBold';
+    font-size: 72px;
+}
+
+.result p {
+    margin-bottom: 120px;
+}
+
+.go-btn {
+    border-radius: var(--btn-border-radius);
+    background-color: var(--btn-color);
+    color: var(--bg-color);
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    padding: 20px 40px;
+    margin-right: 18px;
+}
+
+.share-btn {
+    font-family: 'GmarketSansBold';
+    border-radius: var(--btn-border-radius);
+    background-color: #fff;
+    color: var(--bg-color);
+    padding: 23px 40px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.footer {
+    margin-top: 136px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.footer img {
+    width: 125px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    color: #fff;
+}
