@@ -58,6 +58,10 @@ button {
     text-indent: -9999px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* layout */
 .app {
     width: 900px;
@@ -77,6 +81,10 @@ button {
 .header .img-logo {
     width: 564px;
     margin: 0 auto;
+}
+
+.main {
+    position: relative;
 }
 
 .main .maxim {
@@ -215,6 +223,53 @@ button {
     background-color: #fff;
     border-radius: var(--btn-border-radius);
     padding: 23px 40px;
+}
+
+.go-modal {
+    width: 800px;
+    height: 800px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 100px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -30px;
+    left: 50px;
+}
+
+.go-modal .go-modal__header {
+    color: var(--bg-color);
+    font-family: "OTEnjoystoriesBA";
+    font-size: 96px;
+    text-align: center;
+    margin: 0 auto 5px;
+}
+
+.go-modal .go-modal__text {
+    color: var(--bg-color);
+    font-family: "OTEnjoystoriesBA";
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+.go-modal img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 0 auto 60px;
+}
+
+.go-modal .exit-btn {
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    color: var(--bg-color);
+    background-color: var(--btn-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    padding: 20px 40px;
 }
 
 .footer {
