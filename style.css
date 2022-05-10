@@ -62,15 +62,14 @@ button {
 .app {
     width: 900px;
     margin: 0 auto;
-    /* background-color: lightblue; */
 }
 
 /* components */
 .header {
-    margin-top: 100px;
     background: url("./images/logo-bg-clock.png") no-repeat;
     background-position: center;
     background-size: 220px;
+    margin-top: 100px;
     padding: 50px 0;
     text-align: center;
 }
@@ -81,19 +80,19 @@ button {
 }
 
 .main .maxim {
-    margin-top: 66px;
     color: var(--btn-color);
     font-family: "OTEnjoystoriesBA";
     font-weight: 700;
     font-size: 36px;
     text-align: center;
+    margin-top: 66px;   
 }
 
 .rule-definition {
-    color: #fff;
     font-family: 'GmarketSansLight';
     font-size: 20px;
     text-align: center;
+    color: #fff;
     margin-bottom: 100px;
     position: relative;
 }
@@ -105,9 +104,7 @@ button {
 
 .rule-definition::before {
     content: "";
-    background: url("./images/quotation-left.png") no-repeat;
-    background-position: center;
-    background-size: 37px 30px;
+    background: url("./images/quotation-left.png") no-repeat center/37px 30px;
     display: inline-block;
     width: 46px;
     height: 96px;
@@ -137,6 +134,9 @@ button {
 }
 
 .form input {
+    font-family: 'GmarketSansLight';
+    font-size: 20px;
+    text-align: center;
     width: 228px;
     border-radius: 7px;
     padding: 17px 3px;
@@ -153,10 +153,10 @@ button {
 .form .calc-btn {
     font-family: 'GmarketSansBold';
     font-size: 24px;
-    margin-top: 80px;
-    padding: 20px 40px;
     color: var(--bg-color);
     background-color: var(--btn-color);
+    margin-top: 80px;
+    padding: 20px 40px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: var(--btn-border-radius);
     position: relative;
@@ -165,9 +165,7 @@ button {
 .form .calc-btn::after {
     content: "";
     display: inline-block;
-    background: url("./images/finger-point.png") no-repeat;
-    background-position: center;
-    background-size: contain;
+    background: url("./images/finger-point.png") no-repeat center/contain;
     width: 64px;
     height: 72px;
     position: absolute;
@@ -193,29 +191,35 @@ button {
     margin-bottom: 120px;
 }
 
+.btns-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .go-btn {
-    border-radius: var(--btn-border-radius);
-    background-color: var(--btn-color);
-    color: var(--bg-color);
     font-family: 'GmarketSansBold';
     font-size: 24px;
+    color: var(--bg-color);
+    background-color: var(--btn-color);
+    border-radius: var(--btn-border-radius);
     padding: 20px 40px;
-    margin-right: 18px;
+    margin-right: 15px;
+    margin-bottom: 0;
 }
 
 .share-btn {
     font-family: 'GmarketSansBold';
-    border-radius: var(--btn-border-radius);
-    background-color: #fff;
+    font-size: 23px;
     color: var(--bg-color);
+    background-color: #fff;
+    border-radius: var(--btn-border-radius);
     padding: 23px 40px;
-    font-size: 24px;
-    vertical-align: middle;
 }
 
 .footer {
-    margin-top: 136px;
     text-align: center;
+    margin-top: 136px;
     padding-bottom: 50px;
 }
 
@@ -227,6 +231,6 @@ button {
 .footer p {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 13px;
-    line-height: 1;
     color: #fff;
+    line-height: 1;
 }
