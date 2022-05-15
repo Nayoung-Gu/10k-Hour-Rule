@@ -1,291 +1,460 @@
 :root {
-    --bg-color: #5B2386;
-    --btn-color: #FCEE21;
-    --btn-border-radius: 56px;
+  --bg-color: #5b2386;
+  --btn-color: #fcee21;
+  --btn-border-radius: 56px;
 }
 
 @font-face {
-    font-family: 'OTEnjoystoriesBA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'GmarketSansLight';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'GmarketSansBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* reset */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #5B2386;
+  margin: 0;
+  padding: 0;
+  background-color: #5b2386;
 }
 
 input {
-    border: none;
+  border: none;
 }
 
 button {
-    border: none;
-    background: transparent;
-    cursor: pointer;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 .txt-hidden {
-    overflow: hidden;
-    position: absolute;
-    width: 0;
-    height: 0;
-    line-height: 0;
-    text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* layout */
 .app {
-    width: 900px;
-    margin: 0 auto;
+  width: 900px;
+  margin: 0 auto;
 }
 
 /* components */
 .header {
-    background: url("./images/logo-bg-clock.png") no-repeat;
-    background-position: center;
-    background-size: 220px;
-    margin-top: 100px;
-    padding: 50px 0;
-    text-align: center;
+  background: url("./images/logo-bg-clock.png") no-repeat;
+  background-position: center;
+  background-size: 220px;
+  margin-top: 100px;
+  padding: 50px 0;
+  text-align: center;
 }
 
 .header .img-logo {
-    width: 564px;
-    margin: 0 auto;
+  width: 564px;
+  margin: 0 auto;
 }
 
 .main {
-    position: relative;
+  position: relative;
 }
 
 .main .maxim {
-    color: var(--btn-color);
-    font-family: "OTEnjoystoriesBA";
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    margin-top: 66px;   
+  color: var(--btn-color);
+  font-family: "OTEnjoystoriesBA";
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 66px;
 }
 
 .rule-definition {
-    font-family: 'GmarketSansLight';
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 100px;
-    position: relative;
+  font-family: "GmarketSansLight";
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 100px;
+  position: relative;
 }
 
 .rule-definition strong {
-    font-family: 'GmarketSansMedium';
-    font-size: 22px;
+  font-family: "GmarketSansMedium";
+  font-size: 22px;
 }
 
 .rule-definition::before {
-    content: "";
-    background: url("./images/quotation-left.png") no-repeat center/37px 30px;
-    display: inline-block;
-    width: 46px;
-    height: 96px;
-    position: absolute;
-    top: -10px;
-    left: 180px;
+  content: "";
+  background: url("./images/quotation-left.png") no-repeat center/37px 30px;
+  display: inline-block;
+  width: 46px;
+  height: 96px;
+  position: absolute;
+  top: -10px;
+  left: 180px;
 }
 
 .rule-definition::after {
-    content: "";
-    background: url("./images/quotation-right.png") no-repeat;
-    background-size: 37px 30px;
-    display: inline-block;
-    width: 46px;
-    height: 96px;
-    position: absolute;
-    top: 25px;
-    right: 180px;
+  content: "";
+  background: url("./images/quotation-right.png") no-repeat;
+  background-size: 37px 30px;
+  display: inline-block;
+  width: 46px;
+  height: 96px;
+  position: absolute;
+  top: 25px;
+  right: 180px;
 }
 
 .form {
-    font-family: 'GmarketSansLight';
-    font-weight: 500;
-    font-size: 24px;
-    color: #fff;
-    text-align: center;
+  font-family: "GmarketSansLight";
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
 }
 
 .form input {
-    font-family: 'GmarketSansLight';
-    font-size: 20px;
-    text-align: center;
-    width: 228px;
-    border-radius: 7px;
-    padding: 17px 3px;
-    margin: 0 15px;
+  font-family: "GmarketSansLight";
+  font-size: 20px;
+  text-align: center;
+  width: 228px;
+  border-radius: 7px;
+  padding: 17px 3px;
+  margin: 0 15px;
 }
 
 .form input::placeholder {
-    font-family: 'GmarketSansLight';
-    font-size: 20px;
-    color: #BABCBE;
-    text-align: center;
+  font-family: "GmarketSansLight";
+  font-size: 20px;
+  color: #babcbe;
+  text-align: center;
 }
 
 .form .calc-btn {
-    font-family: 'GmarketSansBold';
-    font-size: 24px;
-    color: var(--bg-color);
-    background-color: var(--btn-color);
-    margin-top: 80px;
-    padding: 20px 40px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: var(--btn-border-radius);
-    position: relative;
+  font-family: "GmarketSansBold";
+  font-size: 24px;
+  color: var(--bg-color);
+  background-color: var(--btn-color);
+  margin-top: 80px;
+  padding: 20px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: var(--btn-border-radius);
+  position: relative;
 }
 
 .form .calc-btn::after {
-    content: "";
-    display: inline-block;
-    background: url("./images/finger-point.png") no-repeat center/contain;
-    width: 64px;
-    height: 72px;
-    position: absolute;
-    top: 15px;
-    right: -70px;
-    pointer-events: none;
+  content: "";
+  display: inline-block;
+  background: url("./images/finger-point.png") no-repeat center/contain;
+  width: 64px;
+  height: 72px;
+  position: absolute;
+  top: 15px;
+  right: -70px;
+  pointer-events: none;
 }
 
 .result {
-    font-family: 'GmarketSansLight';
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 140px;
+  font-family: "GmarketSansLight";
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 140px;
 }
 
 .result span {
-    font-family: 'GmarketSansBold';
-    font-size: 72px;
+  font-family: "GmarketSansBold";
+  font-size: 72px;
 }
 
 .result p {
-    margin-bottom: 120px;
+  margin-bottom: 120px;
 }
 
 .btns-cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .go-btn {
-    font-family: 'GmarketSansBold';
-    font-size: 24px;
-    color: var(--bg-color);
-    background-color: var(--btn-color);
-    border-radius: var(--btn-border-radius);
-    padding: 20px 40px;
-    margin-right: 15px;
-    margin-bottom: 0;
+  font-family: "GmarketSansBold";
+  font-size: 24px;
+  color: var(--bg-color);
+  background-color: var(--btn-color);
+  border-radius: var(--btn-border-radius);
+  padding: 20px 40px;
+  margin-right: 15px;
+  margin-bottom: 0;
 }
 
 .share-btn {
-    font-family: 'GmarketSansBold';
-    font-size: 23px;
-    color: var(--bg-color);
-    background-color: #fff;
-    border-radius: var(--btn-border-radius);
-    padding: 23px 40px;
+  font-family: "GmarketSansBold";
+  font-size: 23px;
+  color: var(--bg-color);
+  background-color: #fff;
+  border-radius: var(--btn-border-radius);
+  padding: 23px 40px;
 }
 
 .go-modal {
-    width: 800px;
-    height: 800px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
-    padding: 100px;
-    box-sizing: border-box;
-    position: absolute;
-    top: -30px;
-    left: 50px;
+  width: 800px;
+  height: 800px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  padding: 100px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -30px;
+  left: 50px;
 }
 
 .go-modal .go-modal__header {
-    color: var(--bg-color);
-    font-family: "OTEnjoystoriesBA";
-    font-size: 96px;
-    text-align: center;
-    margin: 0 auto 5px;
+  color: var(--bg-color);
+  font-family: "OTEnjoystoriesBA";
+  font-size: 96px;
+  text-align: center;
+  margin: 0 auto 5px;
 }
 
 .go-modal .go-modal__text {
-    color: var(--bg-color);
-    font-family: "OTEnjoystoriesBA";
-    font-size: 36px;
-    text-align: center;
-    margin: 0;
+  color: var(--bg-color);
+  font-family: "OTEnjoystoriesBA";
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
 }
 
 .go-modal img {
-    width: 400px;
-    height: 300px;
-    display: block;
-    margin: 0 auto 60px;
+  width: 400px;
+  height: 300px;
+  display: block;
+  margin: 0 auto 60px;
 }
 
 .go-modal .exit-btn {
-    font-family: 'GmarketSansBold';
-    font-size: 24px;
-    color: var(--bg-color);
-    background-color: var(--btn-color);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 56px;
-    padding: 20px 40px;
+  font-family: "GmarketSansBold";
+  font-size: 24px;
+  color: var(--bg-color);
+  background-color: var(--btn-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 56px;
+  padding: 20px 40px;
 }
 
 .footer {
-    text-align: center;
-    margin-top: 136px;
-    padding-bottom: 50px;
+  text-align: center;
+  margin-top: 136px;
+  padding-bottom: 50px;
 }
 
 .footer img {
-    width: 125px;
-    margin-bottom: 20px;
+  width: 125px;
+  margin-bottom: 20px;
 }
 
 .footer p {
-    font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  line-height: 1;
+}
+
+@media screen and (max-width: 400px) {
+  /* body {
+    width: 100vw;
+  } */
+
+  .app {
+    width: 300px;
+  }
+
+  .header {
+    background-size: 106px;
+    margin-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .header .img-logo {
+    width: 267px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .main .maxim {
+    font-size: 22px;
+    margin: 0 auto;
+  }
+
+  .rule-definition {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+  }
+
+  .rule-definition strong {
+    font-size: 16px;
+  }
+
+  .rule-definition::before {
+    background-size: 27px 20px;
+    width: 26px;
+    height: 36px;
+    top: 10px;
+    left: 0;
+  }
+
+  .rule-definition::after {
+    background-size: 27px 20px;
+    width: 26px;
+    height: 36px;
+    top: 20px;
+    right: 0;
+  }
+
+  .form {
     font-size: 13px;
-    color: #fff;
+    width: 100%;
+  }
+
+  .form input {
+    font-size: 18px;
+    width: 140px;
+    padding: 7px 3px;
+    margin: 0 5px;
+  }
+
+  .form input:last-child {
+    margin-top: 12px;
+  }
+
+  .form input::placeholder {
+    font-size: 13px;
+  }
+
+  .form .calc-btn {
+    width: 80%;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 15px 35px;
+    border-radius: 13px;
+  }
+
+  .form .calc-btn::after {
+    content: "";
+    width: 43px;
+    height: 48px;
+    top: 30px;
+    right: -50px;
+  }
+
+  .footer {
+    margin-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  .footer img {
+    width: 90px;
+    margin-bottom: 17px;
+  }
+
+  .footer p {
+    font-size: 9px;
     line-height: 1;
+  }
+
+  /* 결과 버튼 누르면 보이는 부분 */
+  .result {
+    font-size: 14px;
+    margin-top: 60px;
+  }
+
+  .result span {
+    font-size: 24px;
+    margin: 0 3px;
+  }
+
+  .result p {
+    margin-bottom: 60px;
+  }
+
+  .go-btn {
+    font-size: 14px;
+    padding: 13px 20px;
+    margin-right: 13px;
+    margin-bottom: 0;
+  }
+
+  .share-btn {
+    font-size: 14px;
+    padding: 13px 20px;
+  }
+
+  /* 모바일에서의 모달창 */
+  .go-modal {
+    width: 110%;
+    height: 450px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+  }
+
+  .go-modal .go-modal__header {
+    font-size: 64px;
+    margin: 0 auto 5px;
+  }
+
+  .go-modal .go-modal__text {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .go-modal img {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto 40px;
+  }
+
+  .go-modal .exit-btn {
+    font-size: 14px;
+    border-radius: 13px;
+    padding: 20px 40px;
+  }
 }
