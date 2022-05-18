@@ -18,7 +18,11 @@ function handleSubmit(){
 }
 
 function handleLoad(){
-    loadingClock.style.backgroundImage = url('./images/logo-bg-clock.png')
+    loadingClock.classList.remove('hidden');
+    setTimeout(()=> {
+        loadingClock.classList.add('hidden');
+    }, 2000)
+
 }
 
 form.addEventListener('submit', handleSubmit);
