@@ -23,7 +23,11 @@ function handleSubmit(event) {
 
 function handleLoad() {
   resultCont.classList.add("hidden");
-  if (subjectInput.value.length !== 0 && hourInput.value.length !== 0) {
+  if (
+    subjectInput.value.length !== 0 &&
+    hourInput.value.length !== 0 &&
+    hourInput.value <= 24
+  ) {
     loadingClock.classList.remove("hidden");
     setTimeout(() => {
       loadingClock.classList.add("hidden");
