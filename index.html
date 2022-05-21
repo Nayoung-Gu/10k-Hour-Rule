@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1만 시간의 법칙</title>
-    <!-- <link rel="icon" type="image/x-icon" href="./images/logo-bg-clock.png"> -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
       rel="stylesheet"
@@ -55,12 +55,16 @@
           </button>
         </form>
         <!-- 결과 버튼을 누르면 나오는 부분 -->
-        <img src="./images/loading.png" alt="로딩중입니다" class="loading-clock hidden">
+        <img
+          src="./images/loading.png"
+          alt="로딩중입니다"
+          class="loading-clock hidden"
+        />
         <div class="result hidden">
           <p>
-            당신은 <span id="resultText">프로그래밍</span> 전문가가 되기 위해서
+            당신은 <span id="resultText"></span> 전문가가 되기 위해서
             <br />
-            대략 <span id="resultDays">5110</span> 일 이상 훈련하셔야 합니다! :)
+            대략 <span id="resultDays"></span> 일 이상 훈련하셔야 합니다! :)
           </p>
           <div class="btns-cont">
             <button class="go-btn" type="button">훈련하러 가기 GO!GO!</button>
