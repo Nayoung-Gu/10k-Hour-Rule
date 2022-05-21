@@ -22,6 +22,7 @@ function handleSubmit(event) {
 }
 
 function handleLoad() {
+  resultCont.classList.add("hidden");
   if (subjectInput.value.length !== 0 && hourInput.value.length !== 0) {
     loadingClock.classList.remove("hidden");
     setTimeout(() => {
@@ -38,6 +39,15 @@ function handleGoModal() {
 }
 
 function handleShareBtn() {
+  let dummy = document.createElement("input");
+  let txt = location.href;
+
+  document.body.appendChild(dummy);
+  dummy.value = txt;
+  dummy.select();
+  document.execCommand("copy");
+  document.body.removeChild(dummy);
+
   window.alert("링크가 복사되었습니다.");
 }
 
