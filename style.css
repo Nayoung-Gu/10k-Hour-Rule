@@ -38,12 +38,12 @@
 
 /* animation */
 @keyframes loading-spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* reset */
@@ -82,14 +82,14 @@ button {
 .header {
   background: url("./images/logo-bg-clock.png") no-repeat;
   background-position: center;
-  background-size: 250px;
+  background-size: 230px;
   margin-top: 100px;
   padding: 50px 0;
   text-align: center;
 }
 
 .header .img-logo {
-  width: 600px;
+  width: 570px;
   margin: 0 auto;
 }
 
@@ -101,7 +101,7 @@ button {
   color: var(--btn-color);
   font-family: "OTEnjoystoriesBA";
   font-weight: 700;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   margin: 70px 0;
 }
@@ -121,26 +121,26 @@ button {
 }
 
 .rule-definition::before {
-    content: "";
-    background: url("./images/quotation-left.png") no-repeat center/37px 30px;
-    display: inline-block;
-    width: 46px;
-    height: 96px;
-    position: absolute;
-    top: -5px;
-    left: 180px;
+  content: "";
+  background: url("./images/quotation-left.png") no-repeat center/37px 30px;
+  display: inline-block;
+  width: 46px;
+  height: 96px;
+  position: absolute;
+  top: -5px;
+  left: 180px;
 }
 
 .rule-definition::after {
-    content: "";
-    background: url("./images/quotation-right.png") no-repeat;
-    background-size: 37px 30px;
-    display: inline-block;
-    width: 46px;
-    height: 96px;
-    position: absolute;
-    top: 35px;
-    right: 180px;
+  content: "";
+  background: url("./images/quotation-right.png") no-repeat;
+  background-size: 37px 30px;
+  display: inline-block;
+  width: 46px;
+  height: 96px;
+  position: absolute;
+  top: 35px;
+  right: 170px;
 }
 
 .form {
@@ -194,11 +194,11 @@ button {
 }
 
 .loading-clock {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 100px auto 0;
-    animation: loading-spin 1.5s infinite linear;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto 0;
+  animation: loading-spin 1.5s infinite linear;
 }
 
 .result {
@@ -367,10 +367,10 @@ button {
   }
 
   .form input {
-    font-size: 18px;
+    font-size: 15px;
     width: 140px;
     padding: 7px 3px;
-    margin: 0 5px;
+    margin: 5px;
   }
 
   .form input:last-child {
@@ -475,5 +475,5 @@ button {
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
