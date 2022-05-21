@@ -1,29 +1,47 @@
-const form = document.querySelector('.form');
-const calcBtn = document.querySelector('.calc-btn');
-const loadingClock = document.querySelector('.loading-clock');
+const form = document.querySelector(".form");
+const subjectInput = form.querySelector("#subjectInput");
+const hourInput = form.querySelector("#hourInput");
+const calcBtn = document.querySelector(".calc-btn");
+const loadingClock = document.querySelector(".loading-clock");
+const resultCont = document.querySelector(".result");
+const goBtn = resultCont.querySelector(".go-btn");
 const goModal = document.querySelector(".go-modal");
-const exitBtn = goModal.querySelector(".exitBtn");
+const shareBtn = resultCont.querySelector(".share-btn");
+const exitBtn = goModal.querySelector(".exit-btn");
 
-// function handleExit(){
-//     console.log("hi")
-//     goModal.classList.add("hidden");
-// }
+function handleSubmit(event) {
+  const resultText = resultCont.querySelector("#resultText");
+  const resultDays = resultCont.querySelector("#resultDays");
 
-// if(exitBtn){
-//     exitBtn.addEventListener("click", handleExit);
-// }
-
-function handleSubmit(){
-    event.preventDefault();
+  event.preventDefault();
+  setTimeout(() => {
+    resultCont.classList.remove("hidden");
+  }, 1500);
+  resultText.textContent = subjectInput.value;
+  resultDays.textContent = Math.floor(10000 / parseInt(hourInput.value));
 }
 
-function handleLoad(){
-    loadingClock.classList.remove('hidden');
-    setTimeout(()=> {
-        loadingClock.classList.add('hidden');
-    }, 2000)
-
+function handleLoad() {
+  if (subjectInput.value.length !== 0 && hourInput.value.length !== 0) {
+    loadingClock.classList.remove("hidden");
+    setTimeout(() => {
+      loadingClock.classList.add("hidden");
+    }, 1500);
+  }
 }
 
-form.addEventListener('submit', handleSubmit);
-calcBtn.addEventListener('click', handleLoad);
+function handleGoModal() {
+  goModal.classList.remove("hidden");
+  exitBtn.addEventListener("click", () => {
+    goModal.classList.add("hidden");
+  });
+}
+
+function handleShareBtn() {
+  window.alert("링크가 복사되었습니다.");
+}
+
+form.addEventListener("submit", handleSubmit);
+calcBtn.addEventListener("click", handleLoad);
+goBtn.addEventListener("click", handleGoModal);
+shareBtn.addEventListener("click", handleShareBtn);
