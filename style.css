@@ -4,6 +4,7 @@
   --btn-border-radius: 56px;
 }
 
+/* fonts */
 @font-face {
   font-family: "OTEnjoystoriesBA";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
@@ -103,7 +104,7 @@ button {
   font-weight: 700;
   font-size: 35px;
   text-align: center;
-  margin: 70px 0;
+  margin: 50px 0;
 }
 
 .rule-definition {
@@ -111,7 +112,7 @@ button {
   font-size: 23px;
   text-align: center;
   color: #fff;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   position: relative;
 }
 
@@ -145,7 +146,6 @@ button {
 
 .form {
   font-family: "GmarketSansLight";
-  font-weight: 500;
   font-size: 24px;
   color: #fff;
   text-align: center;
@@ -306,14 +306,10 @@ button {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 13px;
   color: #fff;
-  line-height: 1;
 }
 
+/* responsive */
 @media screen and (max-width: 400px) {
-  /* body {
-    width: 100vw;
-  } */
-
   .app {
     width: 300px;
   }
