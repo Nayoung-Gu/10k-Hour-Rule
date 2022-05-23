@@ -111,7 +111,7 @@ button {
   font-size: 23px;
   text-align: center;
   color: #fff;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   position: relative;
 }
 
@@ -338,7 +338,7 @@ button {
   .rule-definition {
     font-size: 14px;
     line-height: 1.6;
-    margin-bottom: 60px;
+    margin: 30px 0 15px;
   }
 
   .rule-definition strong {
@@ -370,7 +370,7 @@ button {
     font-size: 15px;
     width: 140px;
     padding: 7px 3px;
-    margin: 5px;
+    margin: 0.2em;
   }
 
   .form input:last-child {
@@ -413,6 +413,12 @@ button {
   }
 
   /* 결과 버튼 누르면 보이는 부분 */
+  .loading-clock {
+    width: 100px;
+    height: 100px;
+    margin: 80px auto 0;
+  }
+
   .result {
     font-size: 14px;
     margin-top: 60px;
@@ -420,11 +426,12 @@ button {
 
   .result span {
     font-size: 24px;
-    margin: 0 3px;
+    margin: 0;
   }
 
   .result p {
     margin-bottom: 60px;
+    line-height: 1.5;
   }
 
   .go-btn {
