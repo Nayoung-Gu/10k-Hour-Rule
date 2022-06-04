@@ -38,15 +38,19 @@
 
 /* animation */
 @keyframes loading-spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* reset */
+* {
+  word-break: keep-all;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -121,26 +125,26 @@ button {
 }
 
 .rule-definition::before {
-    content: "";
-    background: url("./images/quotation-left.png") no-repeat center/37px 30px;
-    display: inline-block;
-    width: 46px;
-    height: 96px;
-    position: absolute;
-    top: -5px;
-    left: 180px;
+  content: "";
+  background: url("./images/quotation-left.png") no-repeat center/37px 30px;
+  display: inline-block;
+  width: 46px;
+  height: 96px;
+  position: absolute;
+  top: -5px;
+  left: 180px;
 }
 
 .rule-definition::after {
-    content: "";
-    background: url("./images/quotation-right.png") no-repeat;
-    background-size: 37px 30px;
-    display: inline-block;
-    width: 46px;
-    height: 96px;
-    position: absolute;
-    top: 35px;
-    right: 180px;
+  content: "";
+  background: url("./images/quotation-right.png") no-repeat;
+  background-size: 37px 30px;
+  display: inline-block;
+  width: 46px;
+  height: 96px;
+  position: absolute;
+  top: 35px;
+  right: 180px;
 }
 
 .form {
@@ -194,11 +198,11 @@ button {
 }
 
 .loading-clock {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 100px auto 0;
-    animation: loading-spin 1.5s infinite linear;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto 0;
+  animation: loading-spin 1.5s infinite linear;
 }
 
 .result {
@@ -475,5 +479,5 @@ button {
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
